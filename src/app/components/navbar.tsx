@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 export default function Navbar() {
    return (
       <nav className={styles.nav}>
-         <a href="" title="Helsingin Seudun Liikenne">
+         <a href="/" title="Helsingin Seudun Liikenne">
             <img src="/hsl-logo.svg" className={styles.logo} />
          </a>
          <a
