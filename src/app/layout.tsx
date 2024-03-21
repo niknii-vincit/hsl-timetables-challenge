@@ -5,19 +5,19 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HSL Timetables challenge",
-  description:
-    "A small challenge website for university students to play around with.",
+   title: "HSL Timetables challenge",
+   description:
+      "A small challenge website for university students to play around with.",
 };
 
 export default function RootLayout({
-  children,
+   children,
 }: Readonly<{
-  children: React.ReactNode;
+   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="fi">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+   return (
+      <html lang="fi">
+         <body className={inter.className}>{children}</body>
+      </html>
+   );
 }
