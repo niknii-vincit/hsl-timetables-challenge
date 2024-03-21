@@ -1,0 +1,12 @@
+.lineHeader {
+   display: block;
+}
+.lineHeader span {
+   color: black !important;
+}
+.lineHeaderTxt {
+   display: block;
+}
+.largetxt {
+   font-size: 1.5rem;
+}
