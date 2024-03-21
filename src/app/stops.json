@@ -1,0 +1,232 @@
+{
+   "stops": [
+      {
+         "stopId": "H1416",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 14
+            },
+            {
+               "hour": 9,
+               "minute": 14
+            },
+            {
+               "hour": 10,
+               "minute": 14
+            },
+            {
+               "hour": 16,
+               "minute": 14
+            },
+            {
+               "hour": 17,
+               "minute": 14
+            },
+            {
+               "hour": 18,
+               "minute": 1
+            }
+         ]
+      },
+      {
+         "stopId": "H1398",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 15
+            },
+            {
+               "hour": 9,
+               "minute": 15
+            },
+            {
+               "hour": 10,
+               "minute": 15
+            },
+            {
+               "hour": 16,
+               "minute": 15
+            },
+            {
+               "hour": 17,
+               "minute": 15
+            },
+            {
+               "hour": 18,
+               "minute": 1
+            }
+         ]
+      },
+      {
+         "stopId": "H1452",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 17
+            },
+            {
+               "hour": 9,
+               "minute": 17
+            },
+            {
+               "hour": 10,
+               "minute": 17
+            },
+            {
+               "hour": 16,
+               "minute": 17
+            },
+            {
+               "hour": 17,
+               "minute": 17
+            },
+            {
+               "hour": 18,
+               "minute": 1
+            }
+         ]
+      },
+      {
+         "stopId": "H1453",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 19
+            },
+            {
+               "hour": 9,
+               "minute": 19
+            },
+            {
+               "hour": 10,
+               "minute": 19
+            },
+            {
+               "hour": 16,
+               "minute": 19
+            },
+            {
+               "hour": 17,
+               "minute": 19
+            },
+            {
+               "hour": 18,
+               "minute": 1
+            }
+         ]
+      },
+      {
+         "stopId": "H1454",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 22
+            },
+            {
+               "hour": 10,
+               "minute": 22
+            },
+            {
+               "hour": 16,
+               "minute": 22
+            },
+            {
+               "hour": 17,
+               "minute": 22
+            },
+            {
+               "hour": 18,
+               "minute": 22
+            }
+         ]
+      },
+      {
+         "stopId": "H1455",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 25
+            },
+            {
+               "hour": 10,
+               "minute": 25
+            },
+            {
+               "hour": 16,
+               "minute": 25
+            },
+            {
+               "hour": 17,
+               "minute": 25
+            },
+            {
+               "hour": 18,
+               "minute": 25
+            }
+         ]
+      },
+      {
+         "stopId": "H1451",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 28
+            },
+            {
+               "hour": 10,
+               "minute": 28
+            },
+            {
+               "hour": 16,
+               "minute": 28
+            },
+            {
+               "hour": 17,
+               "minute": 28
+            },
+            {
+               "hour": 18,
+               "minute": 28
+            }
+         ]
+      },
+      {
+         "stopId": "H1377",
+         "stopName": "Cool Bus Stop",
+         "timetables": [
+            {
+               "hour": 8,
+               "minute": 30
+            },
+            {
+               "hour": 9,
+               "minute": 30
+            },
+            {
+               "hour": 10,
+               "minute": 30
+            },
+            {
+               "hour": 16,
+               "minute": 30
+            },
+            {
+               "hour": 17,
+               "minute": 30
+            },
+            {
+               "hour": 18,
+               "minute": 3
+            }
+         ]
+      }
+   ]
+}
