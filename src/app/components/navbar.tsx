@@ -15,7 +15,7 @@ export default function Navbar() {
          >
             Travelling
          </a>
-         <a href="" className={styles.link}>
+         <a href="/timetables" className={styles.link}>
             Timetables
          </a>
       </nav>
