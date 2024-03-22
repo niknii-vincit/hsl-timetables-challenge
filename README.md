@@ -1,36 +1,73 @@
 # HSL Timetables page
 
-[HSL Avoin data](https://www.hsl.fi/hsl/avoin-data#gtfs-rt-rajapinnat)
+A simple web page, with a frontpage and a timetables subpage.
+The timetable is read from a JSON file for simplicitys sake.
 
-[Digitransit GraphiQL documentation](https://digitransit.fi/en/developers/apis/1-routing-api/1-graphiql/)
+HSL provides [open data](https://www.hsl.fi/hsl/avoin-data#gtfs-rt-rajapinnat), but
+unfortunately for us, the timetable Data is in PDF format, so nothing we can use here 😬
 
-[Jore4 Timetables Figma](https://www.figma.com/file/ImSTkCqQn0nhVUtMcUm41P/Timetables-%7C-Routes-and-lines-%7C-JORE-4.0-UX?type=design&node-id=3508-302849&mode=design&t=oh9TkJQDaqPpWa7n-4)
+**Tech stack**
+
+[Node](https://nodejs.org/en)(v18.19) + [TypeScript](https://www.typescriptlang.org/) + [Next](https://nextjs.org/docs/getting-started/installation) + [React](https://react.dev/learn/installation)
 
 ## Getting Started
 
-First, run the development server:
+First, this project requires [Node](https://nodejs.org/en) to work, so please install it if you haven't already.
+(_Pro tip: [nvm](https://github.com/nvm-sh/nvm) makes it easy to manage multiple Node versions._)
+
+To get things up and running, run the following commands in the terminal
 
 ```bash
+# First install the dependencies
+npm install
+
+# Then start the development server
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The subpages are created from their folder structure, so the folder `src/app/foo/` renders into `localhost:3000/foo/`
 
-## Learn More
+### Quality of Life things
 
-To learn more about Next.js, take a look at the following resources:
+#### Prettier
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project contains a `.prettierrc` file, which means it can be formatted with Prettier using VSCode, or other compatible editors (or via commands).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+With VSCode:
 
-## Deploy on Vercel
+1. Install the [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+2. Go to Settings
+3. Search for "Default Formatter" and set it as Prettier
+4. Search for "Format on save" and toggle it on, if it's not already
+5. Now enjoy as Prettier formats your files on save, so you don't have to bother with indentations or which quotemarks to use.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Pretty TS Errors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+TypeScript errors can often be confusing, so [Pretty TS Errors](https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors) helps translating them.
+
+## The challenges
+
+Obviously, the UI is incomplete so the stops data should be formatted and shown in a user friendly way.
+
+-  [ ] Parse the data (hint: `foreach()`, `map()`, etc.)
+-  [ ] Create a type for it (optional, but not really)
+-  [ ] Create a component to render the stop rows
+   -  [ ] Create a component to render the hours and minutes
+-  [ ] Arrange the entire table properly
+   -  [ ] Fix the empty looking beginning
+-  [ ] The website still uses a default favicon
+-  [ ] Accessibility issues
+   -  [ ] Missing title
+   -  [ ] Issue with the voiceover (hint: languages?)
+
+Additionally, the codebase it littered with code smells, which do not affect end product, rather lessen the quality of the code.
+
+Code smells:
+
+-  [ ] Incorrect function name for file
+-  [ ] Repeating and confusing filenames
+-  [ ] Unused assets?
